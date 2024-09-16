@@ -2,26 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 # Define the HTML content (your complete CV)
-st.markdown(
-    """
-    <style>
-       
-        .st-emotion-cache-jmw8un {
-            background-color: rgb(0, 107, 184);
-        }
-        .st-emotion-cache-4zpzjl{
-            background-color: rgb(255, 202, 75);
-        }
-        [data-testid="stToolbar"].st-emotion-cache-15ecox0.ezrtsby0 {
-            display: none;
-        }
-        [data-testid="stChatMessageContent"] p{
-        font-family: 'Arial', sans-serif;
-        }
-    </style>
-    """,
-    unsafe_allow_html=True,
-)
+
 
 html_content = """
 <!DOCTYPE html>
@@ -240,6 +221,16 @@ html_content = """
 # Streamlit app
 def main():
     st.set_page_config(page_title="Ankita Bhivgade CV", layout="wide")
+    st.markdown(
+    """
+    <style>
+        [data-testid="stToolbar"].st-emotion-cache-15ecox0.ezrtsby0 {
+            display: none;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
     
     st.title("Ankita Bhivgade's CV")
     
