@@ -1,5 +1,4 @@
 import streamlit as st
-import streamlit.components.v1 as components
 
 # Define the HTML content (your complete CV)
 
@@ -234,7 +233,7 @@ def main():
     
     
     # Render the HTML content
-    components.html(html_content, height=1200, scrolling=True)
+    st.html(html_content)
 
 if __name__ == "__main__":
     main()
