@@ -234,8 +234,7 @@ def main():
     
     
     # Render the HTML content
-    components.html(html_content)
-                    # height=800, scrolling=True)
+    components.html(html_content, height=800, scrolling=True)
 
 if __name__ == "__main__":
     main()
