@@ -232,7 +232,6 @@ def main():
     unsafe_allow_html=True,
 )
     
-    st.title("Ankita Bhivgade's CV")
     
     # Render the HTML content
     components.html(html_content, height=800, scrolling=True)
